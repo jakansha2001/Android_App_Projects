@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="save_my_data">Save my Data</string>
+    <string name="google_News_Button" />
+    <string name="google_news">Google News</string>
+    <string name="google">Google</string>
+    <string name="add_your_event">Add your event or any link you want to save</string>
+    <string name="google_search">Google Search</string>
+    <string name="add_your_event_">Add your event..</string>
+</resources>

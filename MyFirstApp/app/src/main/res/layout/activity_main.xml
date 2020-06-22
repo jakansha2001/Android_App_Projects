@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      Mark Your Dates"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:background="@drawable/bg_calen"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="44dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"></CalendarView>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/dayContent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_marginTop="24dp"
+            android:hint="@string/add_your_event_"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/saveTextButton"
+            android:background="@drawable/bg_btn"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_my_data"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/></LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    android:orientation="horizontal"
+    <Button
+        android:id="@+id/googleNewsButton"
+        android:background="@drawable/bg_newsbutton"
+        android:onClick="googlenews"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/google_news"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/googleButton"
+        android:background="@drawable/bg_googlebutton"
+        android:onClick="googleweather"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Google Weather"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
